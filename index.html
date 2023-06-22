@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!-- Con esta etiqueta se hace el enlace con el respectivo codigo de css -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Esta etiqueta permite al navegador reconocer caracteres propios del lenguaje español -->
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<!-- Esta nos permite hacer uso del viewport, que cambiara segun el dispositivo en el que nos encontremos -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Con este link podemos usar la fuente establecida para el proyecto -->
+		<link
+			href="https://fonts.cdnfonts.com/css/be-vietnam-pro"
+			rel="stylesheet"
+		/>
+		<!-- Finalmente, la etiqueta tittle nos permite nombrar la pestaña en la que se despliegua nuestro index -->
+		<title>Proyecto FE</title>
+	</head>
+	<body>
+		<header>
+			<!-- Dentro del header tenemos el logo, las opciones de navegacion y el boton de contacto-->
+			<!-- Iniciamos con el logo y se deja con un texto alternativo de "logo" -->
+			<img src="img/logo.svg" alt="logo" />
+			<!-- Para la parte de la navegacion nos ayudamos de una lista desordenada -->
+			<ul>
+				<li>Sports</li>
+				<li>Products</li>
+				<li>About Us</li>
+				<li>Trainnnig</li>
+				<li>Community</li>
+			</ul>
+			<!-- Finalmente queda el boton de contacto -->
+			<button class="button-normal">Contact</button>
+			<img id="menu-nav" src="img/menu.png" alt="menu-icon" />
+		</header>
+		<main>
+			<!-- Se divide el contenido en secciones para tener buena semantica en el documento-->
+			<!-- PRimera seccion de anuncio -->
+			<section id="main-section">
+				<img src="img/padel-intro.png" alt="padel_jugador" />
+				<!-- Encerramos en un div los elementos de texto que contiene el banner -->
+				<div id="main-section-text">
+					<h2>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h2>
+					<p>
+						The final Open of the 2022 World Padel Tour season is underway,
+						don't miss out on any of the action!
+					</p>
+					<button class="button-normal">Contact</button>
+				</div>
+			</section>
+			<!-- Segunda seccion de contenido -->
+			<section>
+				<article>
+					<!-- Esta seccion tambien necesita un div -->
+					<div id="section-dif-pros">
+						<h2>What's different between pros?</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+							aliquet consequat purus sit amet sodales. In faucibus ut nisi eu
+							dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.
+						</p>
+					</div>
+					<!-- Encerramos los keypoints dentro de un elemento padre para poder estructurarlos mejor -->
+					<div id="key-points">
+						<!-- Cada key point debe ir dentro de otro div para poder estructurarlos de la forma deseada -->
+						<div class="point">
+							<div id="title-key-point">
+								<h3>01</h3>
+								<strong>Track company-wide progress</strong>
+							</div>
+							<p>
+								Donec elit est, mattis lacinia arcu eu, efficitur consequat
+								augue. Nam tellus sem, tempus pellentesque egestas vitae,
+								efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget,
+								consequat dolor.
+							</p>
+						</div>
+						<div class="point">
+							<div id="title-key-point">
+								<h3>02</h3>
+								<strong>Advance built-in reports</strong>
+							</div>
+							<p>
+								Donec elit est, mattis lacinia arcu eu, efficitur consequat
+								augue. Nam tellus sem, tempus pellentesque egestas vitae,
+								efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget,
+								consequat dolor.
+							</p>
+						</div>
+						<div id="point-3" class="point">
+							<div id="title-key-point">
+								<h3>03</h3>
+								<strong>Everything you need in one place</strong>
+							</div>
+							<p>
+								Donec elit est, mattis lacinia arcu eu, efficitur consequat
+								augue. Nam tellus sem, tempus pellentesque egestas vitae,
+								efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget,
+								consequat dolor.
+							</p>
+						</div>
+					</div>
+				</article>
+				<!-- En este article se vera la parte de The bets of the month -->
+				<article id="content-best-month">
+					<h2>Best of the month</h2>
+					<!-- Necesito un contenedor para poder poscionar los diferentes perfiles -->
+					<div id="best-profiles">
+						<!-- Cada perfil necesita su div -->
+						<div class="profile">
+							<img src="img/avatar-sanyo.png" alt="sanyo-profile-picture" />
+							<h3>Sanyo</h3>
+							<p>
+								Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+								mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+								penatibus et magnis dis parturient montes, nascetur ridiculus
+								mus.
+							</p>
+						</div>
+						<div class="profile">
+							<img src="img/avatar.lebron.png" alt="lebron-profile-picture" />
+							<h3>Lebron</h3>
+							<p>
+								Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+								mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+								penatibus et magnis dis parturient montes, nascetur ridiculus
+								mus.
+							</p>
+						</div>
+						<div class="profile">
+							<img src="img/avatar-navarro.png" alt="navarro-profile-picture" />
+							<h3>Navarro</h3>
+							<p>
+								Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+								mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+								penatibus et magnis dis parturient montes, nascetur ridiculus
+								mus.
+							</p>
+						</div>
+					</div>
+					<button class="button-normal">More</button>
+				</article>
+				<!-- Article para el apartado de informacion sobre los mejores equipos del  año -->
+				<article id="more-info">
+					<h2>Get to know the best teams of the year</h2>
+					<button class="button-inv">Go for it</button>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<!-- Dividimos nuestro footer en tres cajas: una con el logo y las redes sociales, otro con las dos listas de navegacion y el formulario para recibir notificaciones al correo -->
+			<!-- Redes sociales -->
+			<div id="social-media">
+				<img src="img/logo.png" alt="logo" />
+				<div>
+					<img src="img/icon-facebook.svg" alt="icon-facebook" />
+					<img src="img/icon-youtube.svg" alt="icon-youtube" />
+					<img src="img/icon-twitter.svg" alt="icon-twitter" />
+					<img src="img/icon-pinterest.svg" alt="icon-pinterest" />
+					<img src="img/icon-instagram.svg" alt="icon-instagram" />
+				</div>
+			</div>
+			<!-- Navegacion -->
+			<div id="nav-footer">
+				<ul>
+					<li>Home</li>
+					<li>Princing</li>
+					<li>Products</li>
+					<li>About Us</li>
+				</ul>
+
+				<ul>
+					<li>Trainnnig</li>
+					<li>Community</li>
+					<li>Privacy Policy</li>
+				</ul>
+			</div>
+			<div id="formulario">
+				<form action="/envio_formulario">
+					<input
+						id="entrada"
+						type="text"
+						id="fname"
+						name="fname"
+						value="Update in your inbox"
+					/>
+					<input id="boton" type="submit" value="Go" />
+				</form>
+				<p>Copyright 2020. All Rights Reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>

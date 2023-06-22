@@ -1,0 +1,304 @@
+* {
+	font-family: 'Be Vietnam Pro', sans-serif;
+	font-size: 16px;
+}
+
+body {
+	margin: 0px;
+	box-sizing: border-box;
+}
+header {
+	align-items: center;
+	display: flex;
+	height: 15vh;
+	justify-content: space-around;
+	width: 100%;
+}
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
+header ul li {
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+header ul li:hover {
+	color: rgba(182, 180, 180, 0.829);
+	cursor: pointer;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+#menu-nav {
+	display: none;
+}
+/* Tenemos dos tipos de botones usados en la pagina uno normal con fondo violeta y otros blancos con letras violetas, cabe resaltar que se debe aplicar un pseudoselector que cambie el color por uno mas tenue cuando se haga un hover */
+.button-normal {
+	background-color: rgb(139, 72, 191);
+	border: rgb(139, 72, 191);
+	border-radius: 25px;
+	color: white;
+	height: 50px;
+	width: 130px;
+
+	/* Se toma la desicion de pasar el color original en hexadecimal a rgba para poder hacer la transicion durante el hover */
+}
+.button-normal:hover {
+	background-color: rgba(139, 72, 191, 0.7);
+	border: rgba(139, 72, 191, 0.7);
+	cursor: pointer;
+	transition: 0.2s;
+}
+/* Por otra parte se aplicara el estilo contrario para los botones blancos con letra violeta */
+.button-inv {
+	background-color: white;
+	border: white;
+	border-radius: 20px;
+	color: rgb(139, 72, 191);
+	height: 50px;
+	width: 130px;
+}
+.button-inv:hover {
+	background-color: rgba(139, 72, 191, 0.185);
+	border: rgba(139, 72, 191, 0.185);
+	cursor: pointer;
+	transition: 0.2s;
+}
+/* Ahora haremos la estructura de la main section donde esta la imagen del jugador de padel */
+#main-section {
+	display: flex;
+	justify-content: space-around;
+	padding: 10vh;
+}
+#main-section-text {
+	align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 30vw;
+}
+#main-section-text h2 {
+	font-size: 50px;
+	text-align: right;
+}
+#main-section-text p {
+	text-align: right;
+}
+#section-dif-pros {
+	align-items: center;
+	background-color: #8b48bf;
+	color: white;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+#section-dif-pros h2 {
+	font-size: 36px;
+	font-weight: 700;
+	width: 30vw;
+}
+#section-dif-pros p {
+	font-weight: 300;
+	width: 30vw;
+}
+#key-points {
+	align-self: center;
+	background-color: #fafafa;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+#tittle-key-point {
+	display: flex;
+	flex-direction: row;
+}
+
+.point {
+	margin-top: 0;
+	padding: 30px;
+	padding-top: 0px;
+	width: 35vw;
+}
+
+.point h3 {
+	padding-top: 10px;
+	background-color: #8b48bf;
+	border-radius: 20px;
+	color: white;
+	height: 30px;
+	text-align: center;
+	width: 50px;
+	display: inline-block;
+	justify-content: center;
+	margin-right: 20px;
+}
+.point p {
+	color: rgba(182, 180, 180, 0.829);
+	padding-left: 75px;
+}
+#content-best-month {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+#content-best-month h2 {
+	font-size: 31px;
+	justify-content: center;
+	margin-bottom: 0;
+	padding-top: 20px;
+	text-align: center;
+}
+#best-profiles {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+.profile {
+	align-items: center;
+	background-color: #fafafa;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 50px;
+	padding: 10px;
+	width: 25vw;
+}
+.profile img {
+	align-self: center;
+	margin-top: -50px;
+}
+.profile p {
+	color: rgba(182, 180, 180, 0.829);
+}
+#more-info {
+	align-items: center;
+	background-color: #8b48bf;
+	color: white;
+	display: flex;
+	height: 30vh;
+	justify-content: space-around;
+	margin-top: 5vh;
+}
+#more-info h2 {
+	font-size: 30px;
+	width: 25vw;
+}
+footer {
+	background-color: black;
+	color: white;
+	display: flex;
+	height: 30vh;
+}
+#social-media {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 30vw;
+}
+#nav-footer {
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 20px;
+	width: 30vw;
+}
+#nav-footer ul {
+	list-style-type: none;
+}
+#nav-footer ul li {
+	padding: 10px;
+}
+#formulario {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#formulario #entrada {
+	border-radius: 30px;
+	height: 50px;
+	text-align: center;
+	width: 200px;
+}
+#formulario #boton {
+	background-color: #8b48bf;
+	border-color: #8b48bf;
+	border-radius: 30px;
+	color: white;
+	height: 60px;
+	text-align: center;
+	width: 80px;
+}
+#formulario p {
+	color: #fafafa;
+	font-size: 12px;
+}
+/*  una vez establecido el formato inicial pasamos a la parte de los media queries para plantear las vistas en version mobile */
+@media (max-width: 700px) {
+	html {
+		width: 100vw;
+	}
+	header ul {
+		display: none;
+	}
+	header button {
+		display: none;
+	}
+	#menu-nav {
+		display: flex;
+	}
+	header {
+		justify-content: space-between;
+	}
+	header img {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	#main-section {
+		flex-direction: column;
+		padding: 10px;
+		width: 100%;
+	}
+	#main-section-text {
+		width: 100%;
+	}
+	#section-dif-pros {
+		background-color: #3cddf3;
+		flex-direction: column;
+		width: 100%;
+	}
+	#section-dif-pros h2 {
+		width: 100%;
+		padding-left: 30px;
+		text-align: left;
+	}
+	#section-dif-pros p {
+		width: 100%;
+		padding-left: 10px;
+		text-align: left;
+	}
+	#key-points {
+		flex-direction: column;
+		background-color: white;
+	}
+	.point {
+		width: 100%;
+		padding: 0px;
+		margin-top: 20px;
+	}
+	#title-key-point {
+		background-color: #8b48bf4d;
+		padding-top: 0px;
+		height: 30px;
+	}
+}
