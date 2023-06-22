@@ -6,6 +6,7 @@
 body {
 	margin: 0px;
 	box-sizing: border-box;
+    width:100vw;
 }
 header {
 	align-items: center;
@@ -44,6 +45,8 @@ header ul li:hover {
 
 	/* Se toma la desicion de pasar el color original en hexadecimal a rgba para poder hacer la transicion durante el hover */
 }
+
+
 .button-normal:hover {
 	background-color: rgba(139, 72, 191, 0.7);
 	border: rgba(139, 72, 191, 0.7);
@@ -60,8 +63,9 @@ header ul li:hover {
 	width: 130px;
 }
 .button-inv:hover {
-	background-color: rgba(139, 72, 191, 0.185);
-	border: rgba(139, 72, 191, 0.185);
+	background-color: rgba(188, 116, 243, 0.527);
+	border: rgba(139, 72, 191, 0.397);
+	color:white;
 	cursor: pointer;
 	transition: 0.2s;
 }
@@ -91,18 +95,22 @@ header ul li:hover {
 	color: white;
 	display: flex;
 	justify-content: space-evenly;
-	padding: 10px;
+
 }
 #section-dif-pros h2 {
+	display: flex;
+	align-items: center;
 	font-size: 36px;
 	font-weight: 700;
 	width: 30vw;
+	height: 30px;
 }
 #section-dif-pros p {
 	font-weight: 300;
 	width: 30vw;
 }
 #key-points {
+	padding-top:30px;
 	align-self: center;
 	background-color: #fafafa;
 	display: flex;
@@ -115,6 +123,12 @@ header ul li:hover {
 #tittle-key-point {
 	display: flex;
 	flex-direction: row;
+	/* background-color: #8b48bf4d;
+	color: white; */
+	align-items: center;
+	height: 38px;
+	border-radius: 20px;
+
 }
 
 .point {
@@ -245,7 +259,7 @@ footer {
 }
 /*  una vez establecido el formato inicial pasamos a la parte de los media queries para plantear las vistas en version mobile */
 @media (max-width: 700px) {
-	html {
+	body {
 		width: 100vw;
 	}
 	header ul {
@@ -266,8 +280,9 @@ footer {
 	}
 	#main-section {
 		flex-direction: column;
-		padding: 10px;
 		width: 100%;
+		padding: 0;
+		margin-bottom:20px ;
 	}
 	#main-section-text {
 		width: 100%;
@@ -296,12 +311,25 @@ footer {
 		padding: 0px;
 		margin-top: 20px;
 	}
-	#title-key-point {
-		background-color: #8b48bf4d;
-		padding-top: 0px;
-		height: 30px;
+	#tittle-key-point {
+		background-color: #8B48BF4D;
+		color: white;
 	}
+	#best-profiles{
+		flex-direction:column;
+	}
+	.profile{
+		width:100%;
+	}
+	#more-info{
+		background-color: #3cddf3;
+		flex-direction:column;
+		height:25vh;
+		padding: 20px;
+	}
+	#more-info h2{
+		width:100%
+	}
+
 }
 
-
-/* Hola Mundo */
